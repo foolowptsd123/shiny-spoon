@@ -1,0 +1,176 @@
+---- Minecraft Crash Report ----
+// Everything's going to plan. No, really, that was supposed to happen.
+
+Time: 11/13/25 7:15 PM
+Description: Exception in server tick loop
+
+java.lang.IllegalArgumentException: Failed to register dimension for id 30, One is already registered
+	at net.minecraftforge.common.DimensionManager.registerDimension(DimensionManager.java:118)
+	at net.nevermine.izer.Dimensionizer.init(Dimensionizer.java:98)
+	at net.nevermine.common.nevermine.preInit(nevermine.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cpw.mods.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:532)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.sendEventToModContainer(LoadController.java:212)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:190)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:119)
+	at cpw.mods.fml.common.Loader.preinitializeMods(Loader.java:556)
+	at cpw.mods.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:88)
+	at cpw.mods.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:314)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:117)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:387)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:685)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Linux (amd64) version 6.8.0-1030-azure
+	Java Version: 1.8.0_462, Private Build
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Private Build
+	Memory: 5454039984 bytes (5201 MB) / 5830082560 bytes (5560 MB) up to 11453595648 bytes (10923 MB)
+	JVM Flags: 2 total; -Xms2G -Xmx12G
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 103 mods loaded, 103 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCH	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCH	FML{7.10.99.99} [Forge Mod Loader] (forge-1.7.10-10.13.4.1614-1.7.10-universal.jar) 
+	UCH	Forge{10.13.4.1614} [Minecraft Forge] (forge-1.7.10-10.13.4.1614-1.7.10-universal.jar) 
+	UCH	appliedenergistics2-core{rv2-stable-10} [AppliedEnergistics2 Core] (minecraft.jar) 
+	UCH	CodeChickenCore{1.0.7.46} [CodeChicken Core] (minecraft.jar) 
+	UCH	MobiusCore{1.2.5} [MobiusCore] (minecraft.jar) 
+	UCH	NotEnoughItems{1.0.5.111} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.5.111-universal.jar) 
+	UCH	<CoFH ASM>{000} [CoFH ASM] (minecraft.jar) 
+	UCH	FastCraft{1.25} [FastCraft] (fastcraft-1.25.jar) 
+	UCH	debug{1.0} [debug] (denseores-1.6.2.jar) 
+	UCH	FamiliarsAPI{1.7.10} [Familiars API] (FamiliarsAPI-1.7.10.jar) 
+	UCH	legends{6.15} [Legends Mod] (1Legends-1.7.10-6.15.jar) 
+	UCH	EE3{0.3.0.547} [Equivalent Exchange 3] (EquivalentExchange3-1.7.10-0.3.0.547.jar) 
+	UCH	jewelrycraft2{1.1.4} [Jewelrycraft 2] ([1.7.10] Jewelrycraft2-1.1.4-universal.jar) 
+	UCH	securitycraft{v1.8.13} [SecurityCraft] ([1.7.10]+SecurityCraft+v1.8.13.jar) 
+	UCH	AnimationAPI{1.2.4} [AnimationAPI] (AnimationAPI-1.7.10-1.2.4.jar) 
+	UCE	nevermine{Tslat-1.1.3} [Advent of Ascension] (AoA-Tslat-1.1.3.jar) 
+	UCH	appliedenergistics2{rv2-stable-10} [Applied Energistics 2] (appliedenergistics2-rv2-stable-10.jar) 
+	UCH	ArchimedesShips{1.7.10 v1.7.1} [Archimedes' Ships] (ArchimedesShips-1.7.1.jar) 
+	UCH	armourersWorkshop{1.7.10-0.48.3} [Armourer's Workshop] (Armourers-Workshop-1.7.10-0.48.3.jar) 
+	UCH	atum{0.6} [Atum] (Atum-Mod-1.7.10.jar) 
+	UCH	Baubles{1.0.1.10} [Baubles] (Baubles-1.7.10-1.0.1.10.jar) 
+	UCH	BiblioCraft{1.11.7} [BiblioCraft] (BiblioCraft[v1.11.7][MC1.7.10].jar) 
+	UCH	blocklings{2.1.1} [Blocklings] (Blocklings-Mod-1.7.10.jar) 
+	UCH	CoFHCore{1.7.10R3.1.4} [CoFH Core] (CoFHCore-[1.7.10]3.1.4-329.jar) 
+	UCH	Railcraft{9.12.2.0} [Railcraft] (Railcraft_1.7.10-9.12.2.0.jar) 
+	UCH	TwilightForest{2.3.8dev} [The Twilight Forest] (twilightforest-1.7.10-2.3.8.jar) 
+	UCH	ForgeMultipart{1.2.0.345} [Forge Multipart] (ForgeMultipart-1.7.10-1.2.0.345-universal.jar) 
+	UCH	chisel{2.9.5.11} [Chisel] (Chisel-2.9.5.11.jar) 
+	UCH	CarpentersBlocks{3.3.8.2} [Carpenter's Blocks] (Carpenter's+Blocks+v3.3.8.2+-+MC+1.7.10.jar) 
+	UCH	ChickenChunks{1.3.4.19} [ChickenChunks] (ChickenChunks-1.7.10-1.3.4.19-universal.jar) 
+	UCH	controlling{1.0.0} [Controlling] (Controlling-1.7.10-1.0.0.jar) 
+	UCH	darkcore{0.3} [Dark Core] (darkcore-0.3-86.jar) 
+	UCH	mwaw{1.7.10-0.0.7} [Elemental Witch Mod] (Elemental-Witch-Mod-1.7.10.jar) 
+	UCH	endercore{1.7.10-0.2.0.39_beta} [EnderCore] (EnderCore-1.7.10-0.2.0.39_beta.jar) 
+	UCH	EnderIO{1.7.10-2.3.0.429_beta} [Ender IO] (EnderIO-1.7.10-2.3.0.429_beta.jar) 
+	UCH	extracells{2.3.14} [Extra Cells 2] (ExtraCells-1.7.10-2.3.14b200.jar) 
+	UCH	ThermalFoundation{1.7.10R1.2.6} [Thermal Foundation] (ThermalFoundation-[1.7.10]1.2.6-118.jar) 
+	UCH	ExtraUtilities{1.2.12} [Extra Utilities] (extrautilities-1.2.12.jar) 
+	UCH	DefaultMobPack{1.7.10} [DefaultMobPack] (FamiliarsDefaultMobPack-1.7.10.jar) 
+	UCH	ExtendedFamPack{1.7.10} [ExtendedFamPack] (FamiliarsExtendedFamPack-1.7.10.jar) 
+	UCH	HerobrineFamPack{1.7.10} [HerobrineFamPack] (FamiliarsHerobrineFamPack-1.7.10.jar) 
+	UCH	fastleafdecay{1.4} [Fast Leaf Decay] (FastLeafDecay-1.7.10-1.4.jar) 
+	UCH	ftfloocraft{1.7.10-1.7} [Floocraft] (Floocraft-1.7.10-1.7.jar) 
+	UCH	iChunUtil{4.2.3} [iChunUtil] (iChunUtil-4.2.3.jar) 
+	UCH	GraviGun{4.0.0-beta} [GraviGun] (GravityGun-4.0.0-beta.jar) 
+	UCH	Hats{4.0.1} [Hats] (Hats-4.0.1.jar) 
+	UCH	HatStand{4.0.0} [HatStand] (HatStand-4.0.0.jar) 
+	UCH	InventoryPets{1.5.2} [Inventory Pets] (inventorypets-1.7.10-1.5.2-universal.jar) 
+	UCH	IronChest{6.0.62.742} [Iron Chest] (ironchest-1.7.10-6.0.62.742-universal.jar) 
+	UCH	JABBA{1.2.2} [JABBA] (Jabba-1.2.2_1.7.10.jar) 
+	UCH	journeymap{5.1.4p2} [JourneyMap] (journeymap-1.7.10-5.1.4p2-unlimited.jar) 
+	UCH	lootbags{2.0.17} [Loot Bags] (LootBags-1.7.10-2.0.17.jar) 
+	UCH	magicalcrops{1.7.2 - 0.1 ALPHA} [Magical Crops] (magicalcrops-1.7.10_0.1.jar) 
+	UCH	Mantle{1.7.10-0.3.2.jenkins191} [Mantle] (Mantle-1.7.10-0.3.2b.jar) 
+	UCH	Mekanism{9.1.1} [Mekanism] (Mekanism-1.7.10-9.1.1.1031.jar) 
+	UCH	MekanismGenerators{9.1.1} [MekanismGenerators] (MekanismGenerators-1.7.10-9.1.1.1031.jar) 
+	UCH	MekanismTools{9.1.1} [MekanismTools] (MekanismTools-1.7.10-9.1.1.1031.jar) 
+	UCH	MobProperties{1.0.2} [Mob Properties] (MobProperties-1.7.10-1.0.2.jar) 
+	UCH	cfm{3.4.7} [�9MrCrayfish's Furniture Mod] (MrCrayfishFurnitureModv3.4.7(1.7.10).jar) 
+	UCH	MutantCreatures{1.4.9} [Mutant Creatures] (MutantCreatures-1.7.10-1.4.9.jar) 
+	UCH	NEIAddons{1.12.14.40} [NEI Addons] (neiaddons-1.12.14.40-mc1.7.10.jar) 
+	UCH	NEIAddons|Developer{1.12.14.40} [NEI Addons: Developer Tools] (neiaddons-1.12.14.40-mc1.7.10.jar) 
+	UCH	NEIAddons|AppEng{1.12.14.40} [NEI Addons: Applied Energistics 2] (neiaddons-1.12.14.40-mc1.7.10.jar) 
+	UCH	NEIAddons|Botany{1.12.14.40} [NEI Addons: Botany] (neiaddons-1.12.14.40-mc1.7.10.jar) 
+	UCH	NEIAddons|Forestry{1.12.14.40} [NEI Addons: Forestry] (neiaddons-1.12.14.40-mc1.7.10.jar) 
+	UCH	NEIAddons|CraftingTables{1.12.14.40} [NEI Addons: Crafting Tables] (neiaddons-1.12.14.40-mc1.7.10.jar) 
+	UCH	NEIAddons|ExNihilo{1.12.14.40} [NEI Addons: Ex Nihilo] (neiaddons-1.12.14.40-mc1.7.10.jar) 
+	UCH	neiintegration{1.1.2} [NEI Integration] (NEIIntegration-MC1.7.10-1.1.2.jar) 
+	UCH	NEIlootbags{1.1.3} [NEIlootbags] (NEIlootbags-1.7.10-1.1.3.jar) 
+	UCH	NetherOres{1.7.10R2.3.1} [Nether Ores] (NetherOres-[1.7.10]2.3.1-22.jar) 
+	UCH	oreexcavation{1.1.134} [OreExcavation] (OreExcavation-1.1.134.jar) 
+	UCH	origin{8.0.3} [Origin] (Origin-1.7.10-8.0.3.jar) 
+	UCH	addonscrewdriver{1.0.0} [OriginAddonScrewdriver] (Origin-1.7.10-8.0.3.jar) 
+	UCH	pandorasbox{2.0.1} [Pandora's Box] (PandorasBox-2.1.jar) 
+	UCH	PortalGun{4.0.0-beta-6} [PortalGun] (PortalGun-4.0.0-beta-6-fix-1.jar) 
+	UCH	ProjectE{1.7.10-PE1.10.1} [ProjectE] (ProjectE-1.7.10-PE1.10.1.jar) 
+	UCH	MrTJPCoreMod{1.1.0.33} [MrTJPCore] (MrTJPCore-1.7.10-1.1.0.33-universal.jar) 
+	UCH	ProjRed|Core{4.7.0pre12.95} [ProjectRed Core] (ProjectRed-1.7.10-4.7.0pre12.95-Base.jar) 
+	UCH	ProjRed|Transmission{4.7.0pre12.95} [ProjectRed Transmission] (ProjectRed-1.7.10-4.7.0pre12.95-Integration.jar) 
+	UCH	ProjRed|Transportation{4.7.0pre12.95} [ProjectRed Transportation] (ProjectRed-1.7.10-4.7.0pre12.95-Mechanical.jar) 
+	UCH	ThermalExpansion{1.7.10R4.1.5} [Thermal Expansion] (ThermalExpansion-[1.7.10]4.1.5-248.jar) 
+	UCH	TConstruct{1.7.10-1.8.8.build988} [Tinkers' Construct] (TConstruct-1.7.10-1.8.8.jar) 
+	UCH	ProjRed|Compatibility{4.7.0pre12.95} [ProjectRed Compatibility] (ProjectRed-1.7.10-4.7.0pre12.95-Compat.jar) 
+	UCH	ProjRed|Integration{4.7.0pre12.95} [ProjectRed Integration] (ProjectRed-1.7.10-4.7.0pre12.95-Integration.jar) 
+	UCH	ProjRed|Illumination{4.7.0pre12.95} [ProjectRed Illumination] (ProjectRed-1.7.10-4.7.0pre12.95-Lighting.jar) 
+	UCH	ProjRed|Expansion{4.7.0pre12.95} [ProjectRed Expansion] (ProjectRed-1.7.10-4.7.0pre12.95-Mechanical.jar) 
+	UCH	secretroomsmod{4.7.1} [The SecretRoomsMod] (secretroomsmod-1.7.10-4.7.1.413.jar) 
+	UCH	SSTOW{1.7.10-0.1-RC9-7} [Soul Shards: The Old Ways] (SoulShards-TOW-1.7.10-0.1-RC9-7.jar) 
+	UCH	TardisMod{0.994} [Tardis Mod] (tardismod-1.7.10-0.994-124-DS.jar) 
+	UCH	TextureGeneratorLib{0.2} [TextureGeneratorLib] (TextureGeneratorLib-1.7.10_vBeta2.jar) 
+	UCH	kitchen{1.3.23} [The Kitchen Mod] (TheKitchenMod-1.3.23-1.7.2-10.jar) 
+	UCH	TrailMix{4.0.0} [TrailMix] (TrailMix-4.0.0.jar) 
+	UCH	transformers{${version}} [Transformers Mod] (Transformers Mod.jar) 
+	UCH	witchery{0.24.1} [Witchery] (witchery-1.7.10-0.24.1.jar) 
+	UCH	WTFCore{1.7} [WhiskyTangoFox's Core] (WTFCore-1.7.10_v1.7.jar) 
+	UCH	CaveBiomes{1.6} [WhiskyTangoFox's CaveBiomes] (WTFCaveBiomes-1.7.10_v1.6.jar) 
+	UCH	McMultipart{1.2.0.345} [Minecraft Multipart Plugin] (ForgeMultipart-1.7.10-1.2.0.345-universal.jar) 
+	UCH	ForgeRelocation{0.0.1.4} [ForgeRelocation] (ForgeRelocation-1.7.10-0.0.1.4-universal.jar) 
+	UCH	MCFrames{1.0} [MCFrames] (ForgeRelocation-1.7.10-0.0.1.4-universal.jar) 
+	UCH	RelocationFMP{0.0.1.2} [RelocationFMP] (ForgeRelocationFMP-1.7.10-0.0.1.2-universal.jar) 
+	UCH	denseores{1.0} [Dense Ores] (denseores-1.6.2.jar) 
+	UCH	ForgeMicroblock{1.2.0.345} [Forge Microblocks] (ForgeMultipart-1.7.10-1.2.0.345-universal.jar) 
+	AE2 Version: stable rv2-stable-10 for Forge 10.13.2.1291
+	CoFHCore: -[1.7.10]3.1.4-329
+	ThermalFoundation: -[1.7.10]1.2.6-118
+	Mantle Environment: Environment healthy.
+	NetherOres: -[1.7.10]2.3.1-22
+	ThermalExpansion: -[1.7.10]4.1.5-248
+	TConstruct Environment: Environment healthy.
+	Chisel: Errors like "[FML]: Unable to lookup ..." are NOT the cause of this crash. You can safely ignore these errors. And update forge while you're at it.
+	EnderIO: Found the following problem(s) with your installation:
+                  * The RF API that is being used (1.7.10R1.3.1 from <unknown>) differes from that that is reported as being loaded (1.7.10R1.0.10 from Mekanism-1.7.10-9.1.1.1031.jar).
+                    It is a supported version, but that difference may lead to problems.
+                 This may have caused the error. Try reproducing the crash WITHOUT this/these mod(s) before reporting it.
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)

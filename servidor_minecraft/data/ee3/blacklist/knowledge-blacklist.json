@@ -1,0 +1,516 @@
+[
+  {
+    "orestack": {
+      "name": "oreAluminium"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreAluminum"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreAmethyst"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreArdite"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreBaronyte"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreberryAluminium"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreberryAluminum"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreberryCopper"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreberryEssence"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreberryGold"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreberryIron"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreberryTin"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreBlazium"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreBloodstone"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreBone"
+    }
+  },
+  {
+    "orestack": {
+      "name": "orebushAluminium"
+    }
+  },
+  {
+    "orestack": {
+      "name": "orebushAluminum"
+    }
+  },
+  {
+    "orestack": {
+      "name": "orebushCopper"
+    }
+  },
+  {
+    "orestack": {
+      "name": "orebushEssence"
+    }
+  },
+  {
+    "orestack": {
+      "name": "orebushGold"
+    }
+  },
+  {
+    "orestack": {
+      "name": "orebushIron"
+    }
+  },
+  {
+    "orestack": {
+      "name": "orebushTin"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreCertusQuartz"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreCoal"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreCobalt"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreCopper"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreCrystallite"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreDiamond"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreElecanium"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreEmberstone"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreEmerald"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreFirestone"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreFzDarkIron"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreGemenyte"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreGhastly"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreGhoulish"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreGold"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreIron"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreIronwood"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreJade"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreJewelyte"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreKnightmetal"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreLapis"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreLead"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreLimonite"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreLyon"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreManganese"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreMithril"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreMystite"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreNetherCoal"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreNetherCopper"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreNetherDiamond"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreNetherEmerald"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreNetherGold"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreNetherIron"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreNetherLapis"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreNetherLead"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreNetherMithril"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreNetherNickel"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreNetherOsmium"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreNetherPeridot"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreNetherPlatinum"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreNetherRedstone"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreNetherRuby"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreNetherSalt"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreNetherSaltpeter"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreNetherSapphire"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreNetherSilver"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreNetherSteel"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreNetherSulfur"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreNetherTin"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreNickel"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreOrnamyte"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreOsmium"
+    }
+  },
+  {
+    "orestack": {
+      "name": "orePlatinum"
+    }
+  },
+  {
+    "orestack": {
+      "name": "orePoorCopper"
+    }
+  },
+  {
+    "orestack": {
+      "name": "orePoorGold"
+    }
+  },
+  {
+    "orestack": {
+      "name": "orePoorIron"
+    }
+  },
+  {
+    "orestack": {
+      "name": "orePoorLead"
+    }
+  },
+  {
+    "orestack": {
+      "name": "orePoorTin"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreQuartz"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreRedstone"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreRosite"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreRunium"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreSaltpeter"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreSapphire"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreShadow"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreShryeGems"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreShyreStones"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreSilver"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreSulfur"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreTin"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreUranium"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreVarsium"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreVinteum"
+    }
+  },
+  {
+    "orestack": {
+      "name": "oreYellorite"
+    }
+  },
+  {
+    "itemstack": {
+      "name": "minecraft:coal_ore"
+    }
+  },
+  {
+    "itemstack": {
+      "name": "EE3:alchemicalDust",
+      "metaValue": 1
+    }
+  },
+  {
+    "itemstack": {
+      "name": "EE3:alchemicalDust",
+      "metaValue": 2
+    }
+  },
+  {
+    "itemstack": {
+      "name": "EE3:shardMinium"
+    }
+  },
+  {
+    "itemstack": {
+      "name": "ExtraUtilities:mini-soul",
+      "metaValue": 32767
+    }
+  },
+  {
+    "itemstack": {
+      "name": "ExtraUtilities:unstableingot",
+      "metaValue": 32767
+    }
+  }
+]

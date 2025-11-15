@@ -1,0 +1,211 @@
+[
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:shadowOre"
+    },
+    "energyValue": 4096.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:shadowBlock"
+    },
+    "energyValue": 36864.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:jewelCraftingTable"
+    },
+    "energyValue": 16640.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:crystalBlock"
+    },
+    "energyValue": 64.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:crystalBlock",
+      "metaValue": 1
+    },
+    "energyValue": 64.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:crystalBlock",
+      "metaValue": 2
+    },
+    "energyValue": 64.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:crystalBlock",
+      "metaValue": 3
+    },
+    "energyValue": 64.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:crystalBlock",
+      "metaValue": 4
+    },
+    "energyValue": 64.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:crystalBlock",
+      "metaValue": 5
+    },
+    "energyValue": 64.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:crystalBlock",
+      "metaValue": 6
+    },
+    "energyValue": 64.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:crystalBlock",
+      "metaValue": 7
+    },
+    "energyValue": 64.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:crystalBlock",
+      "metaValue": 8
+    },
+    "energyValue": 64.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:crystalBlock",
+      "metaValue": 9
+    },
+    "energyValue": 64.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:crystalBlock",
+      "metaValue": 10
+    },
+    "energyValue": 64.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:crystalBlock",
+      "metaValue": 11
+    },
+    "energyValue": 64.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:crystalBlock",
+      "metaValue": 12
+    },
+    "energyValue": 64.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:crystalBlock",
+      "metaValue": 13
+    },
+    "energyValue": 64.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:crystalBlock",
+      "metaValue": 14
+    },
+    "energyValue": 64.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:crystalBlock",
+      "metaValue": 15
+    },
+    "energyValue": 64.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:shadowIngot"
+    },
+    "energyValue": 4096.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:molds"
+    },
+    "energyValue": 128.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:molds",
+      "metaValue": 1
+    },
+    "energyValue": 128.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:molds",
+      "metaValue": 2
+    },
+    "energyValue": 128.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:molds",
+      "metaValue": 3
+    },
+    "energyValue": 128.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:molds",
+      "metaValue": 4
+    },
+    "energyValue": 128.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:clayMolds"
+    },
+    "energyValue": 128.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:clayMolds",
+      "metaValue": 1
+    },
+    "energyValue": 128.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:clayMolds",
+      "metaValue": 2
+    },
+    "energyValue": 128.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:clayMolds",
+      "metaValue": 3
+    },
+    "energyValue": 128.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:clayMolds",
+      "metaValue": 4
+    },
+    "energyValue": 128.0
+  },
+  {
+    "itemstack": {
+      "name": "jewelrycraft2:guide"
+    },
+    "energyValue": 288.0
+  }
+]

@@ -1,0 +1,155 @@
+---- Minecraft Crash Report ----
+// Don't do that.
+
+Time: 11/14/25 2:58 AM
+Description: Exception in server tick loop
+
+java.lang.NoSuchMethodError: net.minecraft.util.FoodStats.func_75114_a(I)V
+	at com.blocklings.items.ItemBlockling.func_77659_a(ItemBlockling.java:110)
+	at net.minecraft.item.ItemStack.func_77957_a(ItemStack.java:146)
+	at net.minecraft.server.management.ItemInWorldManager.func_73085_a(ItemInWorldManager.java:316)
+	at net.minecraft.network.NetHandlerPlayServer.func_147346_a(NetHandlerPlayServer.java:539)
+	at net.minecraft.network.play.client.C08PacketPlayerBlockPlacement.func_148833_a(SourceFile:60)
+	at net.minecraft.network.play.client.C08PacketPlayerBlockPlacement.func_148833_a(SourceFile:9)
+	at net.minecraft.network.NetworkManager.func_74428_b(NetworkManager.java:212)
+	at net.minecraft.network.NetworkSystem.func_151269_c(NetworkSystem.java:165)
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:659)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71190_q(DedicatedServer.java:334)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:547)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:396)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:685)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Linux (amd64) version 6.8.0-1030-azure
+	Java Version: 1.8.0_462, Private Build
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Private Build
+	Memory: 519487592 bytes (495 MB) / 2149056512 bytes (2049 MB) up to 11453595648 bytes (10923 MB)
+	JVM Flags: 2 total; -Xms2G -Xmx12G
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 103 mods loaded, 103 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{7.10.99.99} [Forge Mod Loader] (forge-1.7.10-10.13.4.1614-1.7.10-universal.jar) 
+	UCHIJAAAA	Forge{10.13.4.1614} [Minecraft Forge] (forge-1.7.10-10.13.4.1614-1.7.10-universal.jar) 
+	UCHIJAAAA	appliedenergistics2-core{rv2-stable-10} [AppliedEnergistics2 Core] (minecraft.jar) 
+	UCHIJAAAA	CodeChickenCore{1.0.7.46} [CodeChicken Core] (minecraft.jar) 
+	UCHIJAAAA	MobiusCore{1.2.5} [MobiusCore] (minecraft.jar) 
+	UCHIJAAAA	NotEnoughItems{1.0.5.111} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.5.111-universal.jar) 
+	UCHIJAAAA	<CoFH ASM>{000} [CoFH ASM] (minecraft.jar) 
+	UCHIJAAAA	FastCraft{1.25} [FastCraft] (fastcraft-1.25.jar) 
+	UCHIJAAAA	debug{1.0} [debug] (denseores-1.6.2.jar) 
+	UCHIJAAAA	FamiliarsAPI{1.7.10} [Familiars API] (FamiliarsAPI-1.7.10.jar) 
+	UCHIJAAAA	legends{6.15} [Legends Mod] (1Legends-1.7.10-6.15.jar) 
+	UCHIJAAAA	EE3{0.3.0.547} [Equivalent Exchange 3] (EquivalentExchange3-1.7.10-0.3.0.547.jar) 
+	UCHIJAAAA	jewelrycraft2{1.1.4} [Jewelrycraft 2] ([1.7.10] Jewelrycraft2-1.1.4-universal.jar) 
+	UCHIJAAAA	securitycraft{v1.8.13} [SecurityCraft] ([1.7.10]+SecurityCraft+v1.8.13.jar) 
+	UCHIJAAAA	AnimationAPI{1.2.4} [AnimationAPI] (AnimationAPI-1.7.10-1.2.4.jar) 
+	UCHIJAAAA	nevermine{Tslat-1.1.3} [Advent of Ascension] (AoA-Tslat-1.1.3.jar) 
+	UCHIJAAAA	appliedenergistics2{rv2-stable-10} [Applied Energistics 2] (appliedenergistics2-rv2-stable-10.jar) 
+	UCHIJAAAA	ArchimedesShips{1.7.10 v1.7.1} [Archimedes' Ships] (ArchimedesShips-1.7.1.jar) 
+	UCHIJAAAA	armourersWorkshop{1.7.10-0.48.3} [Armourer's Workshop] (Armourers-Workshop-1.7.10-0.48.3.jar) 
+	UCHIJAAAA	atum{0.6} [Atum] (Atum-Mod-1.7.10.jar) 
+	UCHIJAAAA	Baubles{1.0.1.10} [Baubles] (Baubles-1.7.10-1.0.1.10.jar) 
+	UCHIJAAAA	BiblioCraft{1.11.7} [BiblioCraft] (BiblioCraft[v1.11.7][MC1.7.10].jar) 
+	UCHIJAAAA	blocklings{2.1.1} [Blocklings] (Blocklings-Mod-1.7.10.jar) 
+	UCHIJAAAA	CoFHCore{1.7.10R3.1.4} [CoFH Core] (CoFHCore-[1.7.10]3.1.4-329.jar) 
+	UCHIJAAAA	Railcraft{9.12.2.0} [Railcraft] (Railcraft_1.7.10-9.12.2.0.jar) 
+	UCHIJAAAA	TwilightForest{2.3.8dev} [The Twilight Forest] (twilightforest-1.7.10-2.3.8.jar) 
+	UCHIJAAAA	ForgeMultipart{1.2.0.345} [Forge Multipart] (ForgeMultipart-1.7.10-1.2.0.345-universal.jar) 
+	UCHIJAAAA	chisel{2.9.5.11} [Chisel] (Chisel-2.9.5.11.jar) 
+	UCHIJAAAA	CarpentersBlocks{3.3.8.2} [Carpenter's Blocks] (Carpenter's+Blocks+v3.3.8.2+-+MC+1.7.10.jar) 
+	UCHIJAAAA	ChickenChunks{1.3.4.19} [ChickenChunks] (ChickenChunks-1.7.10-1.3.4.19-universal.jar) 
+	UCHIJAAAA	controlling{1.0.0} [Controlling] (Controlling-1.7.10-1.0.0.jar) 
+	UCHIJAAAA	darkcore{0.3} [Dark Core] (darkcore-0.3-86.jar) 
+	UCHIJAAAA	mwaw{1.7.10-0.0.7} [Elemental Witch Mod] (Elemental-Witch-Mod-1.7.10.jar) 
+	UCHIJAAAA	endercore{1.7.10-0.2.0.39_beta} [EnderCore] (EnderCore-1.7.10-0.2.0.39_beta.jar) 
+	UCHIJAAAA	EnderIO{1.7.10-2.3.0.429_beta} [Ender IO] (EnderIO-1.7.10-2.3.0.429_beta.jar) 
+	UCHIJAAAA	extracells{2.3.14} [Extra Cells 2] (ExtraCells-1.7.10-2.3.14b200.jar) 
+	UCHIJAAAA	ThermalFoundation{1.7.10R1.2.6} [Thermal Foundation] (ThermalFoundation-[1.7.10]1.2.6-118.jar) 
+	UCHIJAAAA	ExtraUtilities{1.2.12} [Extra Utilities] (extrautilities-1.2.12.jar) 
+	UCHIJAAAA	DefaultMobPack{1.7.10} [DefaultMobPack] (FamiliarsDefaultMobPack-1.7.10.jar) 
+	UCHIJAAAA	ExtendedFamPack{1.7.10} [ExtendedFamPack] (FamiliarsExtendedFamPack-1.7.10.jar) 
+	UCHIJAAAA	HerobrineFamPack{1.7.10} [HerobrineFamPack] (FamiliarsHerobrineFamPack-1.7.10.jar) 
+	UCHIJAAAA	fastleafdecay{1.4} [Fast Leaf Decay] (FastLeafDecay-1.7.10-1.4.jar) 
+	UCHIJAAAA	ftfloocraft{1.7.10-1.7} [Floocraft] (Floocraft-1.7.10-1.7.jar) 
+	UCHIJAAAA	iChunUtil{4.2.3} [iChunUtil] (iChunUtil-4.2.3.jar) 
+	UCHIJAAAA	GraviGun{4.0.0-beta} [GraviGun] (GravityGun-4.0.0-beta.jar) 
+	UCHIJAAAA	Hats{4.0.1} [Hats] (Hats-4.0.1.jar) 
+	UCHIJAAAA	HatStand{4.0.0} [HatStand] (HatStand-4.0.0.jar) 
+	UCHIJAAAA	InventoryPets{1.5.2} [Inventory Pets] (inventorypets-1.7.10-1.5.2-universal.jar) 
+	UCHIJAAAA	IronChest{6.0.62.742} [Iron Chest] (ironchest-1.7.10-6.0.62.742-universal.jar) 
+	UCHIJAAAA	JABBA{1.2.2} [JABBA] (Jabba-1.2.2_1.7.10.jar) 
+	UCHIJAAAA	journeymap{5.1.4p2} [JourneyMap] (journeymap-1.7.10-5.1.4p2-unlimited.jar) 
+	UCHIJAAAA	lootbags{2.0.17} [Loot Bags] (LootBags-1.7.10-2.0.17.jar) 
+	UCHIJAAAA	magicalcrops{1.7.2 - 0.1 ALPHA} [Magical Crops] (magicalcrops-1.7.10_0.1.jar) 
+	UCHIJAAAA	Mantle{1.7.10-0.3.2.jenkins191} [Mantle] (Mantle-1.7.10-0.3.2b.jar) 
+	UCHIJAAAA	Mekanism{9.1.1} [Mekanism] (Mekanism-1.7.10-9.1.1.1031.jar) 
+	UCHIJAAAA	MekanismGenerators{9.1.1} [MekanismGenerators] (MekanismGenerators-1.7.10-9.1.1.1031.jar) 
+	UCHIJAAAA	MekanismTools{9.1.1} [MekanismTools] (MekanismTools-1.7.10-9.1.1.1031.jar) 
+	UCHIJAAAA	MobProperties{1.0.2} [Mob Properties] (MobProperties-1.7.10-1.0.2.jar) 
+	UCHIJAAAA	cfm{3.4.7} [�9MrCrayfish's Furniture Mod] (MrCrayfishFurnitureModv3.4.7(1.7.10).jar) 
+	UCHIJAAAA	MutantCreatures{1.4.9} [Mutant Creatures] (MutantCreatures-1.7.10-1.4.9.jar) 
+	UCHIJAAAA	NEIAddons{1.12.14.40} [NEI Addons] (neiaddons-1.12.14.40-mc1.7.10.jar) 
+	UCHIJAAAA	NEIAddons|Developer{1.12.14.40} [NEI Addons: Developer Tools] (neiaddons-1.12.14.40-mc1.7.10.jar) 
+	UCHIJAAAA	NEIAddons|AppEng{1.12.14.40} [NEI Addons: Applied Energistics 2] (neiaddons-1.12.14.40-mc1.7.10.jar) 
+	UCHIJAAAA	NEIAddons|Botany{1.12.14.40} [NEI Addons: Botany] (neiaddons-1.12.14.40-mc1.7.10.jar) 
+	UCHIJAAAA	NEIAddons|Forestry{1.12.14.40} [NEI Addons: Forestry] (neiaddons-1.12.14.40-mc1.7.10.jar) 
+	UCHIJAAAA	NEIAddons|CraftingTables{1.12.14.40} [NEI Addons: Crafting Tables] (neiaddons-1.12.14.40-mc1.7.10.jar) 
+	UCHIJAAAA	NEIAddons|ExNihilo{1.12.14.40} [NEI Addons: Ex Nihilo] (neiaddons-1.12.14.40-mc1.7.10.jar) 
+	UCHIJAAAA	neiintegration{1.1.2} [NEI Integration] (NEIIntegration-MC1.7.10-1.1.2.jar) 
+	UCHIJAAAA	NEIlootbags{1.1.3} [NEIlootbags] (NEIlootbags-1.7.10-1.1.3.jar) 
+	UCHIJAAAA	NetherOres{1.7.10R2.3.1} [Nether Ores] (NetherOres-[1.7.10]2.3.1-22.jar) 
+	UCHIJAAAA	oreexcavation{1.1.134} [OreExcavation] (OreExcavation-1.1.134.jar) 
+	UCHIJAAAA	origin{8.0.3} [Origin] (Origin-1.7.10-8.0.3.jar) 
+	UCHIJAAAA	addonscrewdriver{1.0.0} [OriginAddonScrewdriver] (Origin-1.7.10-8.0.3.jar) 
+	UCHIJAAAA	pandorasbox{2.0.1} [Pandora's Box] (PandorasBox-2.1.jar) 
+	UCHIJAAAA	PortalGun{4.0.0-beta-6} [PortalGun] (PortalGun-4.0.0-beta-6-fix-1.jar) 
+	UCHIJAAAA	ProjectE{1.7.10-PE1.10.1} [ProjectE] (ProjectE-1.7.10-PE1.10.1.jar) 
+	UCHIJAAAA	MrTJPCoreMod{1.1.0.33} [MrTJPCore] (MrTJPCore-1.7.10-1.1.0.33-universal.jar) 
+	UCHIJAAAA	ProjRed|Core{4.7.0pre12.95} [ProjectRed Core] (ProjectRed-1.7.10-4.7.0pre12.95-Base.jar) 
+	UCHIJAAAA	ProjRed|Transmission{4.7.0pre12.95} [ProjectRed Transmission] (ProjectRed-1.7.10-4.7.0pre12.95-Integration.jar) 
+	UCHIJAAAA	ProjRed|Transportation{4.7.0pre12.95} [ProjectRed Transportation] (ProjectRed-1.7.10-4.7.0pre12.95-Mechanical.jar) 
+	UCHIJAAAA	ThermalExpansion{1.7.10R4.1.5} [Thermal Expansion] (ThermalExpansion-[1.7.10]4.1.5-248.jar) 
+	UCHIJAAAA	TConstruct{1.7.10-1.8.8.build988} [Tinkers' Construct] (TConstruct-1.7.10-1.8.8.jar) 
+	UCHIJAAAA	ProjRed|Compatibility{4.7.0pre12.95} [ProjectRed Compatibility] (ProjectRed-1.7.10-4.7.0pre12.95-Compat.jar) 
+	UCHIJAAAA	ProjRed|Integration{4.7.0pre12.95} [ProjectRed Integration] (ProjectRed-1.7.10-4.7.0pre12.95-Integration.jar) 
+	UCHIJAAAA	ProjRed|Illumination{4.7.0pre12.95} [ProjectRed Illumination] (ProjectRed-1.7.10-4.7.0pre12.95-Lighting.jar) 
+	UCHIJAAAA	ProjRed|Expansion{4.7.0pre12.95} [ProjectRed Expansion] (ProjectRed-1.7.10-4.7.0pre12.95-Mechanical.jar) 
+	UCHIJAAAA	secretroomsmod{4.7.1} [The SecretRoomsMod] (secretroomsmod-1.7.10-4.7.1.413.jar) 
+	UCHIJAAAA	SSTOW{1.7.10-0.1-RC9-7} [Soul Shards: The Old Ways] (SoulShards-TOW-1.7.10-0.1-RC9-7.jar) 
+	UCHIJAAAA	TardisMod{0.994} [Tardis Mod] (tardismod-1.7.10-0.994-124-DS.jar) 
+	UCHIJAAAA	TextureGeneratorLib{0.2} [TextureGeneratorLib] (TextureGeneratorLib-1.7.10_vBeta2.jar) 
+	UCHIJAAAA	kitchen{1.3.23} [The Kitchen Mod] (TheKitchenMod-1.3.23-1.7.2-10.jar) 
+	UCHIJAAAA	TrailMix{4.0.0} [TrailMix] (TrailMix-4.0.0.jar) 
+	UCHIJAAAA	transformers{${version}} [Transformers Mod] (Transformers Mod.jar) 
+	UCHIJAAAA	witchery{0.24.1} [Witchery] (witchery-1.7.10-0.24.1.jar) 
+	UCHIJAAAA	WTFCore{1.7} [WhiskyTangoFox's Core] (WTFCore-1.7.10_v1.7.jar) 
+	UCHIJAAAA	CaveBiomes{1.6} [WhiskyTangoFox's CaveBiomes] (WTFCaveBiomes-1.7.10_v1.6.jar) 
+	UCHIJAAAA	McMultipart{1.2.0.345} [Minecraft Multipart Plugin] (ForgeMultipart-1.7.10-1.2.0.345-universal.jar) 
+	UCHIJAAAA	ForgeRelocation{0.0.1.4} [ForgeRelocation] (ForgeRelocation-1.7.10-0.0.1.4-universal.jar) 
+	UCHIJAAAA	MCFrames{1.0} [MCFrames] (ForgeRelocation-1.7.10-0.0.1.4-universal.jar) 
+	UCHIJAAAA	RelocationFMP{0.0.1.2} [RelocationFMP] (ForgeRelocationFMP-1.7.10-0.0.1.2-universal.jar) 
+	UCHIJAAAA	denseores{1.0} [Dense Ores] (denseores-1.6.2.jar) 
+	UCHIJAAAA	ForgeMicroblock{1.2.0.345} [Forge Microblocks] (ForgeMultipart-1.7.10-1.2.0.345-universal.jar) 
+	AE2 Version: stable rv2-stable-10 for Forge 10.13.2.1291
+	CoFHCore: -[1.7.10]3.1.4-329
+	ThermalFoundation: -[1.7.10]1.2.6-118
+	Mantle Environment: Environment healthy.
+	NetherOres: -[1.7.10]2.3.1-22
+	ThermalExpansion: -[1.7.10]4.1.5-248
+	TConstruct Environment: Environment healthy.
+	Chisel: Errors like "[FML]: Unable to lookup ..." are NOT the cause of this crash. You can safely ignore these errors. And update forge while you're at it.
+	EnderIO: No known problems detected.
+	AE2 Integration: IC2:OFF, RotaryCraft:OFF, RC:ON, BC:OFF, RF:ON, RFItem:ON, MFR:OFF, DSU:ON, FZ:OFF, FMP:ON, RB:OFF, CLApi:OFF, Waila:OFF, Mekanism:ON, ImmibisMicroblocks:OFF, BetterStorage:OFF
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Player Count: 2 / 20; [EntityPlayerMP['EstebanJC234'/87537, l='world', x=73.66, y=70.00, z=472.52], EntityPlayerMP['blackdesfail'/300814, l='world', x=75.68, y=70.00, z=471.90]]
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)
